@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.8//EN
+N:Diaz;Daniel;;;
+FN:Daniel Diaz
+ORG:UCI-Student;
+EMAIL;type=INTERNET;type=WORK;type=pref:daniel.delvin.diaz@gmail.com
+item1.EMAIL;type=INTERNET:dddiaz@uci.edu
+item1.X-ABLabel:_$!<Other>!$_
+TEL;type=CELL;type=VOICE;type=pref:949-350-4675
+ADR;type=HOME;type=pref:;;26691 Baronet St;Mission Viejo;CA;92694;U.S.A.
+item2.URL;type=pref:www.danieldelvindiaz.com
+item2.X-ABLabel:_$!<HomePage>!$_
+UID:b6454388-be6a-4ec6-973f-1e79598147d8
+X-ABUID:B6454388-BE6A-4EC6-973F-1E79598147D8:ABPerson
+END:VCARD

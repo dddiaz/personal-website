@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Daniel Diaz's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daniel Diaz Engineering">
+    <meta name="author" content="Daniel Diaz">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    
+    <!--Favicon -->
+    <link rel="shortcut icon" href="../favicon.ico" >
+    
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png"> -->
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">Daniel Diaz</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li class="active"><a href="engineering.html">Engineering</a></li>
+                <!--<li><a href="html/photography.html">Photography</a></li>-->
+                <!--<li><a href="html/about.html">About</a></li>-->
+                <!--<li><a href="html/contact.html">Contact</a></li>-->
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Photography <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                  	<li><a href="photography.html">Photography Main Page</a></li>
+                    <li><a href="../assets/img/slideshows/Mock_Trial_Photos/index.html">Mock Trial</a></li>
+                    <li><a href="../assets/img/slideshows/LAObservatory/index.html">LA Observatory</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                  	<li><a href="about.html">About Main Page</a></li>
+                    <li><a href="../assets/img/slideshows/Catalina_scuba/index.html">Scuba Pics</a></li>
+                    <li><a href="about.html">Sailiing</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+      
+        <div class="item active">
+          <img src="../assets/img/banners/20111016_2.jpg" alt="Picture of Daniel Diaz">
+          <div class="container">
+            <div class="carousel-caption">
+              <!--<h1>Engineering</h1>-->
+            </div>
+          </div>
+        </div>
+            
+      </div>
+      
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container">
+    
+    <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h2>Engineering</h2>
+        <p>Hello, my name is Daniel Diaz and I am a computer engineering student at The University of California, Irvine. </p>
+        <p>I am interested in everything related to computers. I particularly enjoy application development (ColdFusion, C, C++, Python, Java).</p>
+        <p> Click on the button for a copy of my resume. Also feel free to check out some of my projects below.</p>
+        <p><a class="btn btn-primary btn-large" href="../assets/resume/resumeDiaz.pdf">Resume &raquo;</a></p>
+      </div>
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+		
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="../assets/img/code icons/Adobe_ColdFusion_9_icon(Beta).png">
+        <h2 class="featurette-heading">ColdFusion <span class="muted">Web Application development</span></h2>
+        <p class="lead"> With ColdFusion I have been able to interact with databases, develop web aplications, and enhance security with login/form checking. To see an example of an application I developed using ColdFusion, click the button below. It will show you a shopping cart web application I developed for use on an e-commerce website. </p>
+        
+        <!-- Modal -->
+        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h3 id="myModalLabel">ColdFusion Cart Example</h3>
+            </div>
+            <div class="modal-body">
+              <h4>ColdFusion Code</h4>
+              <p><script src="https://gist.github.com/b20a506c0e0c206c401f.js"></script></p>
+              <hr>
+            </div>
+            <div class="modal-footer">
+              <button class="btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <div class="bs-docs-example" style="padding-bottom: 24px;">
+            <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Show Code</a>
+          </div>
+      
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+      <!--Need a new logo that is 512 by 512 png add a transparent background too -->
+        <img class="featurette-image pull-left" src="../assets/img/code icons/text-x-python-icon.png">
+        <h2 class="featurette-heading">Python</h2>
+        <p class="lead">With Python I have been able to implement quick programs that take use of user input and GUI interfaces. Below you will find an example of some code I wrote. It was for a planet trace project.</p>
+        
+        <!-- Modal -->
+        <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h3 id="myModalLabel">Python Planet Trace Example</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Python Code</h4>
+              <p><script src="https://gist.github.com/465f3e85764d802f2258.js"></script></p>
+              <hr>
+            </div>
+            <div class="modal-footer">
+              <button class="btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <div class="bs-docs-example" style="padding-bottom: 24px;">
+            <a data-toggle="modal" href="#myModal1" class="btn btn-primary btn-large">Show Code</a>
+          </div>
+      <!-- i think this div is only for after all the featurettes, check</div>-->
+	
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="../assets/img/code icons/java-default-logo-icon-png-large-orignal.png">
+        <h2 class="featurette-heading">Java</h2>
+        <p class="lead">I have extensive expierence with Java. Using Java I developed Android games. These games included Snake, Tetris, Pac-man, and a side scrolling space shooter. I also implemtented different sorting and graphing algorithms. </p>
+        <p> The first example is a 3-D Point sorting program. Using either radix, heap, merge, or quick sort, my program lists the points in order of distance from a predefined point.</p>
+        
+        <div class="bs-docs-example" style="padding-bottom: 24px;">
+            <a data-toggle="modal" href="#myModal2" class="btn btn-primary btn-large">3D Point Sorting</a>
+          </div>
+          
+        <p> The second example is a Java Spell Checker program that I developed that checks a txt file for missplellings against a user defined dictionary.</p>
+        <!-- Modal -->
+        <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h3 id="myModalLabel">Java 3D Point Sorting</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Java Code</h4>
+              <p><script src="https://gist.github.com/166f01d32f1d213003c7.js"></script></p>
+              <hr>
+            </div>
+            <div class="modal-footer">
+              <button class="btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+          <!-- Modal -->
+        <div id="myModal3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h3 id="myModalLabel">Java Spell Checker</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Java Code</h4>
+              <p><script src="https://gist.github.com/a8a422b70a7bf486e0a7.js"></script></p>
+              <hr>
+            </div>
+            <div class="modal-footer">
+              <button class="btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <div class="bs-docs-example" style="padding-bottom: 24px;">
+            <a data-toggle="modal" href="#myModal3" class="btn btn-primary btn-large">Spell Checker</a>
+          </div>
+      </div>
+
+      <hr class="featurette-divider">
+      
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="../assets/img/code icons/text-x-c-icon.png">
+        <h2 class="featurette-heading">C</h2>
+        <p class="lead">C is another language I have had the chance to become familiar with. Using C, I was able to develop an application that could take in a video and apply a certain effect. Also, I was  project leader of a MIPS Disassembler/Assembler project that was built in c.</p>
+        <p> If you click the button below, you will be shown two files (movie.c,DIPS.c) that was a part of the Video Effects Program.
+        
+        <!-- Modal -->
+        <div id="myModal4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h3 id="myModalLabel">Movie Lab</h3>
+            </div>
+            <div class="modal-body">
+              <h4>C Code</h4>
+              <p><script src="https://gist.github.com/fa9a13d234e825d80381.js"></script></p>
+              <hr>
+            </div>
+            <div class="modal-footer">
+              <button class="btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <div class="bs-docs-example" style="padding-bottom: 24px;">
+            <a data-toggle="modal" href="#myModal4" class="btn btn-primary btn-large">Movie Lab</a>
+          </div>
+      </div>
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2012 Daniel Diaz All Rights Reserved &middot; </p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+  </body>
+</html>
